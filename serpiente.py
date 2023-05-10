@@ -1,10 +1,12 @@
 from turtle import *
-from random import randrange
+from random import randrange, choice
 from freegames import square, vector
 
 food = vector(0, 0)
 snake = [vector(10, 0)]
 aim = vector(0, -10)
+
+colors = ['blue', 'green', 'orange', 'purple', 'yellow']
 
 def change(x, y):
     "Change snake direction."
@@ -14,7 +16,6 @@ def change(x, y):
 def inside(head):
     "Return True if head inside boundaries."
     return -200 < head.x < 190 and -200 < head.y < 190
-
 
 def move_food():
     "Move food to a random position."
@@ -46,10 +47,10 @@ def move():
 
     clear()
 
-    for body in snake:
-        square(body.x, body.y, 9, 'black')
+    for i, body in enumerate(snake):
+        square(body.x, body.y, 9, colors[i % len(colors)])  # Asignar colores aleatorios a la serpiente
 
-    square(food.x, food.y, 9, 'green')
+    square(food.x, food.y, 9, choice(colors))  # Asignar un color aleatorio a la comida
     update()
     ontimer(move, 100)
 
