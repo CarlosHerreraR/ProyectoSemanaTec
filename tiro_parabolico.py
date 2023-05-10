@@ -1,12 +1,14 @@
+#Importar librerias
 from random import randrange
 from turtle import *
 from freegames import vector
 
-#Valores iniciales
+# Valores iniciales
 ball = vector(-200, -200)
 speed = vector(0, 0)
 targets = []
 
+#Funcion para que responda al tocar en algun punto de la pantalla
 def tap(x, y):
     "Respond to screen tap."
     if not inside(ball):
@@ -32,7 +34,7 @@ def draw():
         dot(6, 'red')
 
     update()
-
+#Función para avanzar más rápido
 def move():
     "Move ball and targets."
     if randrange(40) == 0:
@@ -42,9 +44,12 @@ def move():
 
     for target in targets:
         target.x -= 2  # Aumenta la velocidad de movimiento de los balones
+        # RHace 
+        if not inside(target):
+            target.x = 200  
 
     if inside(ball):
-        speed.y -= 1  # Aumenta la velocidad de movimiento del proyectil
+        speed.y -= 0.2  # Aumenta la velocidad de movimiento del proyectil
         ball.move(speed)
 
     dupe = targets.copy()
@@ -55,10 +60,6 @@ def move():
             targets.append(target)
 
     draw()
-
-    for target in targets:
-        if not inside(target):
-            return
 
     ontimer(move, 25)  # Ajusta el tiempo de espera para un movimiento más rápido
 
