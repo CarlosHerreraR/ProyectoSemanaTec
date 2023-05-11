@@ -21,10 +21,17 @@ def square(start, end):
         left(90)
 
     end_fill()
-    
-def circle(start, end):
-    "Draw circle from start to end."
-    pass  # TODO
+#función de círculo   
+def circulo(start, end):
+    """Draw circle from start to end."""
+    up()
+    radius = abs(start - end)
+    goto(start.x, start.y - radius)
+    down()
+    fillcolor('black')  
+    begin_fill()
+    circle(radius)
+    end_fill()
 
 #función de rectangulo
 def rectangle(start, end):
