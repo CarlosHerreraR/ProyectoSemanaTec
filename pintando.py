@@ -28,7 +28,6 @@ def circulo(start, end):
     radius = abs(start - end)
     goto(start.x, start.y - radius)
     down()
-    fillcolor('black')  
     begin_fill()
     circle(radius)
     end_fill()
@@ -57,7 +56,7 @@ def triangle(start, end):
         forward(end.x - start.x)
         left(120)
     end_fill()
-
+#Función para almacenar un punto de inicio o dibujar
 def tap(x, y):
     "Store starting point or draw shape."
     start = state['start']
