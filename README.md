@@ -14,19 +14,16 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#getting-started">Imagenes juegos</a>
-      <ul>
-        <li><a href="#prerequisites">Logs commits/a></li>
-    
-      </ul>
+      <a href="#imagenes-juegos">Imagenes juegos</a>
+      <a href="#cambios">Cambios realizados</a>
+      <a href="#logs-commits">Log de los commits</a>
     </li>
   </ol>
 </details>
 
-
 <br />
 
-### Imagenes juegos
+### imagenes-juegos
 <img src="img/serpiente.gif" width="400" height="200">
 <img src="img/packman.gif" width="400" height="200">
 <img src="img/memoria.gif" width="400" height="200">
@@ -35,7 +32,11 @@
 
 <br />
 
-### Logs commits
+### cambios
+
+<img src="img/video.mp4" width="400" height="200">
+
+### logs-commits
 
 Log de los commits realizados
    ```sh
