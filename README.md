@@ -1,29 +1,31 @@
 <div id="top"></div>
 
-<!-- PROJECT LOGO -->
-<br />
-<h3>Proyecto juegos</h3>
+<h2>Proyecto juegos Documentación</h2>
 
 <h4>Carlos Yahir Herrera Rodríguez A01798203</h4>
-<br>
 <h4>Igancio Solís Montes A0151213</h4>
 
 <br />
 
 <details>
-  <summary>Table of Contents</summary>
+  <summary>Tabla de contenido</summary>
   <ol>
     <li>
       <a href="#imagenes-juegos">Imagenes juegos</a>
-      <a href="#cambios">Cambios realizados</a>
-      <a href="#logs-commits">Log de los commits</a>
     </li>
+     <li>
+      <a href="#cambios">Cambios realizados</a>
+     </li>
+      <li>
+      <a href="#logs-commits">Log de los commits</a>
+      </li>
+   
   </ol>
 </details>
 
 <br />
 
-### imagenes-juegos
+### Imagenes juegos
 <img src="img/serpiente.gif" width="400" height="200">
 <img src="img/packman.gif" width="400" height="200">
 <img src="img/memoria.gif" width="400" height="200">
@@ -32,11 +34,11 @@
 
 <br />
 
-### cambios
+### Cambios
 
 <img src="img/video.mp4" width="400" height="200">
 
-### logs-commits
+### Logs commits
 
 Log de los commits realizados
    ```sh
