@@ -50,15 +50,9 @@ def move():
     clear()
 
     for i, body in enumerate(snake):
-<<<<<<< HEAD
-        square(body.x, body.y, 9, colors[i % len(colors)])  # Asignar colores aleatorios a la serpiente
-
-    square(food.x, food.y, 9, choice(colors))  # Asignar un color aleatorio a la comida
-=======
         square(body.x, body.y, 9, colors[i % len(colors)])  # Asigna colores aleatorios a los segmentos de la serpiente
 
     square(food.x, food.y, 9, choice(colors))  # Asigna un color aleatorio a la comida
->>>>>>> 96bf5e2fc66a7cc7ce8f71411feb12c4d5d1c273
     update()
     ontimer(move, 100)
 

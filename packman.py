@@ -1,3 +1,4 @@
+#Importar librerías
 from random import choice
 from turtle import *
 from freegames import floor, vector
@@ -78,6 +79,7 @@ def valid(point):
         return False
 
     return point.x % 20 == 0 or point.y % 20 == 0
+
 # Parametros visuales del mapa
 def world():
     "Draw world using path."
