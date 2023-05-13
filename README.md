@@ -35,8 +35,7 @@
 <br />
 
 ### Cambios
-
-<img src="img/video.mp4" width="400" height="200">
+VIDEO EN YOUTUBE: https://www.youtube.com/embed/PPRwYfSBeEM
 
 ### Instalacion de los juegos
 1. Instalación de librería freegames:
